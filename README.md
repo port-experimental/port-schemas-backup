@@ -52,3 +52,5 @@ export PORT_CLIENT_SECRET=<your Port Client Secret>
 pip install -r requirements.txt
 python main.py
 ```
+
+Tested on Python 3.9.6
