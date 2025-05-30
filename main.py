@@ -77,7 +77,8 @@ def backup_port_schemas():
                 final_zip_path = candidate
                 break
             count += 1
-    shutil.make_archive(final_zip_path.with_suffix("").as_posix(), "zip", tmp)
+    shutil.make_archive(final_zip_path.with_suffix("").as_posix(), "zip", tmp) # create zip archive
+    shutil.rmtree(tmp) # clean up temporary folder
 
 
 if __name__ == "__main__":
